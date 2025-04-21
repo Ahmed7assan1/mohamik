@@ -1,0 +1,90 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    background-color: #1D1D1D;
+    ; /* لون الخلفية */
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo img {
+    width: 75px; /* حجم اللوجو */
+    cursor: pointer;
+}
+
+/* ✅ ضبط قائمة الروابط */
+.navbar-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 18px;
+    padding: 0;
+}
+
+.navbar-links li {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.navbar-links li:hover {
+    color: #D7BA55;
+
+    /* لون التأثير عند التحويل */
+}
+
+/* ✅ ضبط الأيقونات */
+.navbar-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-icons img {
+    width: 25px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.navbar-icons img:hover {
+    transform: scale(1.2); /* تكبير الأيقونات عند التحويل */
+}
+
+.navbar-links li {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar-links li:hover {
+    color: #D7BA55;
+}
+
+.navbar-logo {
+    cursor: pointer;
+}
+
+/* إضافة تأثير للنقر */
+.navbar-links li:active {
+    transform: scale(0.95);
+}
+
+
+
+/* ✅ جعل التصميم متجاوب للأجهزة الصغيرة */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar-icons {
+        margin-top: 10px;
+    }
+}

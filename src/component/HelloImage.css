@@ -1,0 +1,56 @@
+/* يضمن أن القسم يأخذ ارتفاع الشاشة بالكامل مع الهيدر */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* يأخذ ارتفاع الشاشة بالكامل */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+/* التأكد من أن الصورة تمتد عبر القسم */
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* يجعل الصورة تملأ القسم بالكامل بدون تمدد */
+    z-index: 0 /* يجعلها خلف النصوص */
+}
+
+/* طبقة تدرج شفافة لمساعدة على قراءة النص */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+    z-index: 1;
+}
+
+/* جعل النصوص تظهر فوق الصورة */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 80%;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #E8C95C;
+    ;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    line-height: 1.6;
+}

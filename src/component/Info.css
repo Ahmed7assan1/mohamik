@@ -1,0 +1,26 @@
+.info {
+    width: 1473px;
+    height: 579px;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.info h1 {
+    font-size: 70px;
+    margin-top: 179px;
+}
+
+.info p {
+    font-size: 32px;
+    padding: 52px;
+    margin-top: -100px;
+    text-align: center;
+}
+body{
+    direction: rtl;
+}

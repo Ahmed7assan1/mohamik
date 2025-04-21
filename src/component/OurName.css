@@ -1,0 +1,14 @@
+.Ourname-class{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Ourname-class img{
+    padding: 82px;
+    margin-top: 109px;
+}
+
+.Ourname-class h3{
+    color: #E8C95C;
+}

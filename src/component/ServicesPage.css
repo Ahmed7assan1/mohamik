@@ -1,0 +1,117 @@
+/* تنسيق الصفحة الرئيسية */
+.services-page {
+    text-align: center;
+    /* padding: 50px 0; */
+    background-color: #070c28;
+}
+
+/* عنوان الصفحة */
+.services-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #E8C95C;
+    margin-bottom: 40px;
+}
+
+/* الحاوية التي تضم جميع الأقسام */
+.services-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* كل قسم خدمة */
+.service-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    color: white;
+    min-height: 400px;
+    width: 80%;
+    margin: 30px auto;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(7, 12, 40, 0.9) 0%, rgba(5, 78, 69, 0.9) 100%);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* تأثير عند مرور الماوس */
+.service-section:hover {
+    transform: scale(1.02);
+}
+
+/* تنويع الخلفيات بين الأقسام */
+.service-section:nth-child(odd) {
+    background: linear-gradient(178.13deg, #021129 11.52%, #031833 48.94%, #03142D 61.07%, #020D23 71.7%, #020C22 82.31%, #01081B 98.69%);
+}
+
+.service-section:nth-child(even) {
+    background: linear-gradient(178.13deg, #021129 11.52%, #031833 48.94%, #03142D 61.07%, #020D23 71.7%, #020C22 82.31%, #01081B 98.69%);
+}
+
+/* محتوى النص */
+.service-content {
+    flex: 1;
+    text-align: right;
+    padding: 20px;
+}
+
+.service-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #E8C95C;
+    margin-bottom: 15px;
+}
+
+.service-description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* صورة الخدمة */
+.service-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.service-image {
+    width: 90%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-image:hover {
+    transform: scale(1.05);
+}
+
+/* عند جعل الأقسام متعاكسة */
+.service-section.reverse {
+    flex-direction: row-reverse;
+}
+
+/* استجابة للموبايل */
+@media (max-width: 768px) {
+    .service-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .service-content {
+        text-align: center;
+    }
+
+    .service-section.reverse {
+        flex-direction: column;
+    }
+
+    .service-image {
+        width: 100%;
+    }
+}
