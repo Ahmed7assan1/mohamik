@@ -10,6 +10,8 @@ import OurName from './component/OurName';
 import FormData from './component/FormData';
 import Profile from './component/lawyers/Profile';
 import Lawyer from './component/lawyers/Lawyer';
+import Login from './component/auth/Login';
+import Client from './component/clients/Client';
 
 function App() {
   return (
@@ -29,11 +31,17 @@ function App() {
               <UniqueServices/>
               <Callus/>
               <Mission/>
-              <Profile/>
-              <Lawyer/>
             </>
           } />
           <Route path="/services" element={<ServicesPage />} />
+          <Route path="/lawyers" element={ 
+            <>
+              <Login/>
+              <Lawyer/>
+              <Profile/>
+              <Client/>
+            </>
+            } />
         </Routes>
       </div>
     </Router>

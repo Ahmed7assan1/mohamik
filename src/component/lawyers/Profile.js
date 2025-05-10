@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Profile.css";
 
 function Profile() {
   const [activeTab, setActiveTab] = useState("description"); // الحالة الافتراضية
