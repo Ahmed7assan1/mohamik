@@ -1,0 +1,48 @@
+.ourname-class {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+    min-height: 600px;
+}
+
+.ourname-class > div:first-child {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.ourname-class h3 {
+    color: #E8C95C;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.ourname-class p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.ourname-class img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .ourname-class {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .ourname-class > div:first-child {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .ourname-class img {
+        max-width: 100%;
+    }
+} 

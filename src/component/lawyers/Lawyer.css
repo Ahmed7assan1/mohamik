@@ -1,112 +1,38 @@
-/* أنماط المودال */
-.booking-modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-.booking-modal {
-  background-color: white;
+.profile-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
   border-radius: 8px;
-  width: 90%;
-  max-width: 500px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  direction: rtl;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.modal-header {
-  padding: 20px;
-  border-bottom: 1px solid #eee;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.modal-header h2 {
-  margin: 0;
-  font-size: 1.5rem;
+.profile-container h2 {
   color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
 }
 
-.close-button {
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
+.profile-container p {
+  color: #666;
+  margin: 0.8rem 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
   color: #666;
 }
 
-.modal-body {
-  padding: 20px;
-}
-
-.time-slots {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 10px;
-  margin-top: 15px;
-}
-
-.time-slot {
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+.error-message {
+  color: #dc3545;
   text-align: center;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.time-slot:hover {
-  background-color: #f5f5f5;
-}
-
-.time-slot.selected {
-  background-color: #4CAF50;
-  color: white;
-  border-color: #4CAF50;
-}
-
-.modal-footer {
-  padding: 20px;
-  border-top: 1px solid #eee;
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-}
-
-.confirm-button {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 10px 20px;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
   border-radius: 4px;
-  cursor: pointer;
-}
-
-.confirm-button:disabled {
-  background-color: #cccccc;
-  cursor: not-allowed;
-}
-
-.cancel-button {
-  background-color: #f44336;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* تأثير الضبابية للخلفية */
-.blurred {
-  filter: blur(4px);
-  pointer-events: none;
-  user-select: none;
-}
+} 

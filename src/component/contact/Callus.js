@@ -1,11 +1,11 @@
 import React from "react";
-import "./Callus.css"
+import styles from "./Callus.module.css";
 
-function Callus (){
-    return(
-        <div className="callus">
+function Callus() {
+    return (
+        <div className={styles.callus}>
             <div>
-                <img  src="/pics/asset.png"  alt=" "/>
+                <img src="/pics/asset.png" alt=" " />
             </div>
             <div>
                 <div>
@@ -13,7 +13,7 @@ function Callus (){
                     <p>محامون ذوو خبرة مستعدون للقتال من أجل حقوقك</p>
                 </div>
                 <div>
-                    <button className="btn-call">
+                    <button className={styles["btn-call"]}>
                         مجالات القانون لدينا
                     </button>
                     <span>

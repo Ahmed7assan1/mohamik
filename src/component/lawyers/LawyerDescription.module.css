@@ -1,0 +1,259 @@
+/* Reset */
+@import url(//codepen.io/chrisdothtml/pen/ojLzJK.css);
+
+/* Variables */
+:root {
+  --delete-color: #c0392b;
+  --delete-color-dark: #a53125;
+  --success-color: #27ae60;
+  --transition-speed: 0.25s;
+}
+
+.lawyer-description-container {
+  max-width: 800px;
+  margin: -40px auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lawyer-description-container h2 {
+  color: #03142D;
+  margin-bottom: 2rem;
+  text-align: center;
+  border-bottom: 2px solid #E8C95C;
+  padding-bottom: 1rem;
+}
+
+.description-view {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.description-view p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+.description-view strong {
+  color: #03142D;
+  font-weight: bold;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 35rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.action-buttons button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.action-buttons button:first-child {
+  background-color: #3498db;
+  color: white;
+}
+
+.action-buttons button:first-child:hover {
+  background-color: #2980b9;
+}
+
+/* New Animated Delete Button Styles */
+.delete-btn {
+  display: block;
+  background-color: var(--delete-color);
+  width: 120px;
+  height: 45px;
+  line-height: 45px;
+  margin: auto;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
+  transition: all var(--transition-speed) cubic-bezier(0.310, -0.105, 0.430, 1.400);
+  border: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.delete-btn span,
+.delete-btn .icon {
+  display: block;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  top: 0;
+}
+
+.delete-btn span {
+  width: 72%;
+  line-height: inherit;
+  font-size: 14px;
+  text-transform: uppercase;
+  left: 0;
+  transition: all var(--transition-speed) cubic-bezier(0.310, -0.105, 0.430, 1.400);
+}
+
+.delete-btn span:after {
+  content: '';
+  background-color: var(--delete-color-dark);
+  width: 2px;
+  height: 70%;
+  position: absolute;
+  top: 15%;
+  right: -1px;
+}
+
+.delete-btn .icon {
+  width: 28%;
+  right: 0;
+  transition: all var(--transition-speed) cubic-bezier(0.310, -0.105, 0.430, 1.400);
+}
+
+.delete-btn .icon .fa {
+  font-size: 18px;
+  vertical-align: middle;
+  transition: all var(--transition-speed) cubic-bezier(0.310, -0.105, 0.430, 1.400), height var(--transition-speed) ease;
+}
+
+.delete-btn .icon .fa-remove {
+  height: 18px;
+}
+
+.delete-btn .icon .fa-check {
+  display: none;
+}
+
+.delete-btn.success span,
+.delete-btn:hover span {
+  left: -72%;
+  opacity: 0;
+}
+
+.delete-btn.success .icon,
+.delete-btn:hover .icon {
+  width: 100%;
+}
+
+.delete-btn.success .icon .fa,
+.delete-btn:hover .icon .fa {
+  font-size: 22px;
+}
+
+.delete-btn.success {
+  background-color: var(--success-color);
+}
+
+.delete-btn.success .icon .fa-remove {
+  display: none;
+}
+
+.delete-btn.success .icon .fa-check {
+  display: inline-block;
+}
+
+.delete-btn:hover {
+  opacity: .9;
+}
+
+.delete-btn:hover .icon .fa-remove {
+  height: 22px;
+}
+
+.delete-btn:active {
+  opacity: 1;
+}
+
+.description-form {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.description-form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #03142D;
+}
+
+.description-form input,
+.description-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.description-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.form-actions button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.form-actions button[type="submit"] {
+  background-color: #27ae60;
+  color: white;
+}
+
+.form-actions button[type="submit"]:hover {
+  background-color: #229954;
+}
+
+.form-actions button[type="button"] {
+  background-color: #95a5a6;
+  color: white;
+}
+
+.form-actions button[type="button"]:hover {
+  background-color: #7f8c8d;
+}
+
+@media (max-width: 768px) {
+  .lawyer-description-container {
+    padding: 1rem;
+  }
+  
+  .action-buttons,
+  .form-actions {
+    flex-direction: column;
+  }
+  
+  .action-buttons button,
+  .form-actions button {
+    width: 100%;
+  }
+} 

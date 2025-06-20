@@ -1,9 +1,9 @@
 import React from "react";
-import "./Mission.css";
+import styles from "./Mission.module.css";
 
 function Mission() {
     return(
-    <div className="mission">
+    <div className={styles.mission}>
         <h3>مهمتنا</h3>
         <p>نحن هنا لدعمك في كل خطوة على الطريق. رغم أن منصتنا في عامها الأول، إلا أننا نعمل مع فريق من المحامين الخبراء في مختلف التخصصات القانونية لتحقيق أفضل النتائج لعملائنا.
         نحن ملتزمون بتوفير العدالة التي تستحقها. هدفنا هو تسهيل الوصول إلى المحامين المتميزين وتقديم الدعم القانوني الذي يلبي احتياجاتك الشخصية.

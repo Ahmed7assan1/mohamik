@@ -1,0 +1,359 @@
+/* ConsultationComponent.css */
+
+.consultation-container {
+  font-family: 'Tahoma', 'Arial', sans-serif;
+  max-width: 1200px;
+  margin: -80px auto;
+  padding: 20px;
+  direction: rtl;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.error-message {
+  color: #d32f2f;
+  background-color: #fde8e8;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-right: 4px solid #d32f2f;
+}
+
+.error {
+  color: #d32f2f;
+  background-color: #fde8e8;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border-right: 3px solid #d32f2f;
+  font-size: 14px;
+}
+
+.success {
+  color: #2e7d32;
+  background-color: #e8f5e8;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border-right: 3px solid #2e7d32;
+  font-size: 14px;
+}
+
+.add-availability-form {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-availability-form h3 {
+  margin-top: 0;
+  color: #2c3e50;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input[type="datetime-local"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-group small {
+  display: block;
+  margin-top: 5px;
+  color: #666;
+  font-size: 12px;
+}
+
+.add-availability-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.add-availability-button:hover {
+  background-color: #2980b9;
+}
+
+.add-availability-button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.consultation-list h3 {
+  color: #2c3e50;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.no-consultations {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.consultation-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.consultation-item {
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.consultation-item:hover {
+  transform: translateY(-2px);
+}
+
+.consultation-item.available {
+  border-right: 4px solid #2ecc71;
+}
+
+.consultation-item.booked {
+  border-right: 4px solid #3498db;
+}
+
+.consultation-item.cancelled {
+  border-right: 4px solid #e74c3c;
+  opacity: 0.8;
+}
+
+.consultation-info {
+  flex: 1;
+}
+
+.date-arabic {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 0 0 5px 0;
+}
+
+.time-range {
+  color: #666;
+  margin: 0 0 10px 0;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.status-badge.available {
+  background-color: #e8f8f0;
+  color: #2ecc71;
+}
+
+.status-badge.booked {
+  background-color: #e3f2fd;
+  color: #3498db;
+}
+
+.status-badge.cancelled {
+  background-color: #ffebee;
+  color: #e74c3c;
+}
+
+.profile-info {
+  margin-top: 10px;
+}
+
+.profile-info p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.consultation-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 120px;
+}
+
+.details-button,
+.book-button,
+.cancel-button,
+.delete-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.details-button {
+  background-color: #f1c40f;
+  color: #fff;
+}
+
+.details-button:hover {
+  background-color: #f39c12;
+}
+
+.book-button {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+.book-button:hover {
+  background-color: #27ae60;
+}
+
+.cancel-button {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.cancel-button:hover {
+  background-color: #c0392b;
+}
+
+.delete-button {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+
+.delete-button:disabled,
+.book-button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.consultation-details-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  color: #2c3e50;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #7f8c8d;
+}
+
+.details-section {
+  margin-bottom: 20px;
+}
+
+.details-section h4 {
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+.details-section p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.status-text {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.status-text.available {
+  background-color: #e8f8f0;
+  color: #2ecc71;
+}
+
+.status-text.booked {
+  background-color: #e3f2fd;
+  color: #3498db;
+}
+
+.status-text.cancelled {
+  background-color: #ffebee;
+  color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+  .consultation-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .consultation-actions {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 15px;
+  }
+
+  .consultation-actions button {
+    flex: 1;
+  }
+}

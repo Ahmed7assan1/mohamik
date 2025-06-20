@@ -1,11 +1,11 @@
 import React from "react";
-import "./HelloImage.css";
+import styles from "./HelloImage.module.css";
 
 function Hello() {
     return (
-        <div className="hero-section">
-            <img src="/pics/Hello/8d2a31d79d4f88b45c48054409d8cbb7.png" alt="Hello Image" className="hero-image" />
-            <div className="hero-content">
+        <div className={styles["hero-section"]}>
+            <img src="/pics/Hello/8d2a31d79d4f88b45c48054409d8cbb7.png" alt="Hello Image" className={styles["hero-image"]} />
+            <div className={styles["hero-content"]}>
                 <h1>خدماتنا</h1>
                 <p>
                     في محاميك، نحن ملتزمون بتقديم تجربة قانونية مميزة وسلسة. خدماتنا مصممة خصيصًا لتلبية احتياجاتك القانونية

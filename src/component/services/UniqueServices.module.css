@@ -1,0 +1,46 @@
+.unique-services {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.unique-services img {
+    width: 50%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    flex: 1;
+    text-align: right;
+}
+
+.content h3 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.content p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .unique-services {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .unique-services img {
+        width: 100%;
+    }
+
+    .content {
+        text-align: center;
+    }
+} 

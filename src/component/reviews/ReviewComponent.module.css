@@ -1,0 +1,566 @@
+.reviewContainer {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.reviewHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.reviewHeader h3 {
+  margin: 0;
+  color: #03142D;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.ratingSummary {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.averageRating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ratingNumber {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #E8C95C;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  font-size: 1.2rem;
+  color: #ddd;
+  transition: color 0.2s ease;
+}
+
+.star.filled {
+  color: #E8C95C;
+}
+
+.reviewCount {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Form Section */
+.formSection {
+  margin-bottom: 24px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.addReviewBtn {
+  background: #03142D;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.addReviewBtn:hover {
+  background: #1a2b3d;
+}
+
+.reviewForm {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.reviewForm h4 {
+  margin: 0 0 16px 0;
+  color: #03142D;
+  font-size: 1.2rem;
+}
+
+.ratingInput {
+  margin-bottom: 16px;
+}
+
+.ratingInput label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #03142D;
+}
+
+.starSelector {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.starBtn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #ddd;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  padding: 4px;
+}
+
+.starBtn:hover,
+.starBtn.selected {
+  color: #E8C95C;
+}
+
+.ratingText {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.commentInput {
+  margin-bottom: 16px;
+}
+
+.commentInput label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #03142D;
+}
+
+.commentInput textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.2s ease;
+}
+
+.commentInput textarea:focus {
+  outline: none;
+  border-color: #03142D;
+  box-shadow: 0 0 0 2px rgba(3, 20, 45, 0.1);
+}
+
+.formActions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.submitBtn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submitBtn:hover {
+  background: #218838;
+}
+
+.cancelBtn {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.cancelBtn:hover {
+  background: #5a6268;
+}
+
+/* Reviews List */
+.reviewsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.noReviews {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  padding: 40px 20px;
+}
+
+.reviewItem {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 16px;
+  border: 1px solid #e9ecef;
+  transition: box-shadow 0.2s ease;
+}
+
+.reviewItem:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reviewItem .reviewHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.reviewerInfo {
+  flex: 1;
+}
+
+.reviewerName {
+  display: block;
+  font-weight: 600;
+  color: #03142D;
+  margin-bottom: 4px;
+}
+
+.reviewRating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.reviewRating .stars {
+  gap: 1px;
+}
+
+.reviewRating .star {
+  font-size: 1rem;
+}
+
+.reviewActions {
+  display: flex;
+  gap: 8px;
+}
+
+.editBtn,
+.deleteBtn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.editBtn {
+  background: #ffc107;
+  color: #212529;
+}
+
+.editBtn:hover {
+  background: #e0a800;
+}
+
+.deleteBtn {
+  background: #dc3545;
+  color: white;
+}
+
+.deleteBtn:hover {
+  background: #c82333;
+}
+
+.reviewComment {
+  color: #495057;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* Loading and Error States */
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.error {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #f5c6cb;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* Lawyer Select Dropdown */
+.lawyerSelect {
+  margin-bottom: 16px;
+}
+
+.lawyerSelect label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #03142D;
+}
+
+.lawyerSelect select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: white;
+  transition: border-color 0.2s ease;
+}
+
+.lawyerSelect select:focus {
+  outline: none;
+  border-color: #03142D;
+  box-shadow: 0 0 0 2px rgba(3, 20, 45, 0.1);
+}
+
+.lawyerSelect select:disabled {
+  background: #f8f9fa;
+  color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Lawyer ID Input */
+.lawyerSelect input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: white;
+  transition: border-color 0.2s ease;
+}
+
+.lawyerSelect input:focus {
+  outline: none;
+  border-color: #03142D;
+  box-shadow: 0 0 0 2px rgba(3, 20, 45, 0.1);
+}
+
+.lawyerSelect input::placeholder {
+  color: #999;
+}
+
+/* Lawyer Name Display */
+.lawyerName {
+  margin-bottom: 16px;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border: 1px solid #e9ecef;
+}
+
+.lawyerName label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 500;
+  color: #03142D;
+  font-size: 0.9rem;
+}
+
+.lawyerName span {
+  display: block;
+  color: #495057;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .reviewContainer {
+    padding: 16px;
+    margin: 16px 0;
+  }
+
+  .reviewHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .ratingSummary {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .formActions {
+    flex-direction: column;
+  }
+
+  .submitBtn,
+  .cancelBtn {
+    width: 100%;
+  }
+
+  .reviewItem .reviewHeader {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .reviewActions {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 480px) {
+  .reviewContainer {
+    padding: 12px;
+  }
+
+  .reviewHeader h3 {
+    font-size: 1.3rem;
+  }
+
+  .ratingNumber {
+    font-size: 1.5rem;
+  }
+
+  .star {
+    font-size: 1rem;
+  }
+
+  .starBtn {
+    font-size: 1.3rem;
+  }
+}
+
+/* زر حذف متحرك بنفس تنسيق الديسكريبشن */
+.deleteBtnAnimated {
+  display: block;
+  background-color: var(--delete-color, #c0392b);
+  width: 120px;
+  height: 45px;
+  line-height: 45px;
+  margin: auto;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
+  transition: all var(--transition-speed, 0.25s) cubic-bezier(0.310, -0.105, 0.430, 1.400);
+  border: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.deleteBtnAnimated span,
+.deleteBtnAnimated .icon {
+  display: block;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  top: 0;
+}
+
+.deleteBtnAnimated span {
+  width: 72%;
+  line-height: inherit;
+  font-size: 14px;
+  text-transform: uppercase;
+  left: 0;
+  transition: all var(--transition-speed, 0.25s) cubic-bezier(0.310, -0.105, 0.430, 1.400);
+}
+
+.deleteBtnAnimated span:after {
+  content: '';
+  background-color: var(--delete-color-dark, #a53125);
+  width: 2px;
+  height: 70%;
+  position: absolute;
+  top: 15%;
+  right: -1px;
+}
+
+.deleteBtnAnimated .icon {
+  width: 28%;
+  right: 0;
+  transition: all var(--transition-speed, 0.25s) cubic-bezier(0.310, -0.105, 0.430, 1.400);
+}
+
+.deleteBtnAnimated .icon .fa {
+  font-size: 18px;
+  vertical-align: middle;
+  transition: all var(--transition-speed, 0.25s) cubic-bezier(0.310, -0.105, 0.430, 1.400), height var(--transition-speed, 0.25s) ease;
+}
+
+.deleteBtnAnimated .icon .fa-remove {
+  height: 18px;
+}
+
+.deleteBtnAnimated .icon .fa-check {
+  display: none;
+}
+
+.deleteBtnAnimated.success span,
+.deleteBtnAnimated:hover span {
+  left: -72%;
+  opacity: 0;
+}
+
+.deleteBtnAnimated.success .icon,
+.deleteBtnAnimated:hover .icon {
+  width: 100%;
+}
+
+.deleteBtnAnimated.success .icon .fa,
+.deleteBtnAnimated:hover .icon .fa {
+  font-size: 22px;
+}
+
+.deleteBtnAnimated.success {
+  background-color: var(--success-color, #27ae60);
+}
+
+.deleteBtnAnimated.success .icon .fa-remove {
+  display: none;
+}
+
+.deleteBtnAnimated.success .icon .fa-check {
+  display: inline-block;
+}
+
+.deleteBtnAnimated:hover {
+  opacity: .9;
+}
+
+.deleteBtnAnimated:hover .icon .fa-remove {
+  height: 22px;
+}
+
+.deleteBtnAnimated:active {
+  opacity: 1;
+} 

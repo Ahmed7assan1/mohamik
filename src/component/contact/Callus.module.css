@@ -1,0 +1,36 @@
+.callus {
+    display: flex;
+    height: 314px;
+    background-image: linear-gradient(to right, #0103FF, #01E4FF);
+    align-items: center;
+}
+
+.btn-call {
+    border-radius: 25px;
+    background-color: #0A0B5C;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.callus h5 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.callus p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.callus > div:last-child > div:last-child {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+} 

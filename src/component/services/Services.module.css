@@ -1,0 +1,35 @@
+.service-section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.service-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.service-content {
+    flex: 1;
+}
+
+.service-title {
+    color: yellow;
+    margin-bottom: 1rem;
+}
+
+.service-description {
+    color: #fff;
+    line-height: 1.6;
+}
+
+.service-image-container {
+    flex: 1;
+}
+
+.service-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+} 

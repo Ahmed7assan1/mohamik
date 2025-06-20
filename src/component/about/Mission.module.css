@@ -1,0 +1,25 @@
+.mission {
+    background-image: url("/public/pics/Desktop-23.png");
+    width: 1473px;
+    height: 725px;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.mission h3 {
+    font-size: 70px;
+    color: #E8C95C;
+    margin-top: 179px;
+}
+
+.mission p {
+    font-size: 30px;
+    padding: 30px;
+    margin-top: -100px;
+    text-align: right;
+} 

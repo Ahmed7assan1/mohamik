@@ -1,0 +1,91 @@
+.formSection {
+    display: flex;
+    background-color: #03142D;
+    padding: 40px;
+    gap: 40px;
+    align-items: center;
+}
+
+.formSection > div {
+    flex: 1;
+}
+
+.formSection img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.formSection h3 {
+    color: #E8C95C;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.formSection p {
+    color: white;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.formSection form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formSection form div {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.formSection form div input {
+    flex: 1;
+}
+
+.formSection input,
+.formSection textarea {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #03142D;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+}
+
+.formSection textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.formSection button {
+    border-radius: 30px;
+    background-color: #827133;
+    color: white;
+    padding: 19px 50px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.formSection button:hover {
+    background-color: #d4b64a;
+}
+
+@media (max-width: 768px) {
+    .formSection {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .formSection form div {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
